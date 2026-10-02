@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="form-container">
+        <h1>Zodiac Sign Form</h1>
+
+        <form id="horoscope-form">
+            <label for="zodiac-sign">Choose your zodiac sign:</label>
+
+            <select id="zodiac-sign" name="zodiacSign">
+                <option value="Aries">Aries</option>
+                <option value="Taurus">Taurus</option>
+                <option value="Gemini">Gemini</option>
+                <option value="Cancer">Cancer</option>
+                <option value="Leo">Leo</option>
+                <option value="Virgo">Virgo</option>
+                <option value="Libra">Libra</option>
+                <option value="Scorpio">Scorpio</option>
+                <option value="Sagittarius">Sagittarius</option>
+                <option value="Capricorn">Capricorn</option>
+                <option value="Aquarius">Aquarius</option>
+                <option value="Pisces">Pisces</option>
+            </select>
+
+            <button type="submit">Submit</button>
+        </form>
+    </div>
+    <div class="results" id="results">
+        <img id="sign-icon" src="https://openmoji.org/data/color/svg/2648.svg" alt="Zodiac sign icon">
+
+        <p>Your sign is <span class="sign"></span>.</p>
+
+        <p>The date range for <span class="sign"></span> is <span id="date-range"></span>.</p>
+
+        <p>Your horoscope today is <span id="daily-reading"></span></p>
+    </div>
+    <script src="script.js"></script>
+</body>
+
+</html>
